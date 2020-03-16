@@ -28,7 +28,7 @@ def gram3Generator(fileName):
 
 	#Add Edges based on 3-gram model word wise
 	for sent in text:
-		for i,word in enumerate(sent):
+		for i,word in  (sent):
 			if i+2<len(sent):
 				if(G.has_edge(sent[i],sent[i+1])):
 					G.edges[sent[i],sent[i+1]]['weight']+=1
@@ -48,8 +48,8 @@ def gram3Generator(fileName):
 				else:
 					G.add_edge(sent[i],sent[i+1],weight=1)
 
-	# print("No of Nodes : "+str(G.number_of_nodes()))
-	# print("No of Edges : "+str(G.number_of_edges()))
+	print("No of Nodes : "+str(G.number_of_nodes()))
+	print("No of Edges : "+str(G.number_of_edges()))
 	return G
 
 

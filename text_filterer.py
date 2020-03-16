@@ -94,7 +94,7 @@ def formTokens(fromFileName,toFileName="###"):
 			if word not in freq:
 				freq[word]=0
 			freq[word]+=1
-	# print(freq)
+	print(freq)
 
 	def takekey(elem):
 		return freq[elem]
