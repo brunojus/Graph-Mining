@@ -1,0 +1,11 @@
+Inserir a formação de direcionalidade
+Testar com dados mais simples 
+
+Total de palavras
+Número de nós
+Número de arestas
+Número de arestas repetidas
+Arestas paralelas
+LCC e LSC 
+
+Tarjan
